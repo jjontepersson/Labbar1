@@ -1,0 +1,26 @@
+﻿<Window x:Class="Uppgift11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Uppgift11"
+        mc:Ignorable="d"
+        Title="Smörgåsen" Height="450" Width="800">
+    <Grid>
+        <Label Content="Oturskalkylatorn" HorizontalAlignment="Center" Margin="0,57,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <ProgressBar x:Name="progressBar" HorizontalAlignment="Center" Height="44" Margin="0,141,0,0" VerticalAlignment="Top" Width="365" Value="50"/>
+        <Button x:Name="mindreBtn" Content="Mindre&#xD;&#xA;Otur" HorizontalAlignment="Left" Margin="148,141,0,0" VerticalAlignment="Top" Height="44" Width="49" Click="mindreBtn_Click"/>
+        <Button x:Name="merBtn" Content="Mer&#xD;&#xA;Otur" HorizontalAlignment="Left" Margin="605,141,0,0" VerticalAlignment="Top" Height="44" Width="49" Click="merBtn_Click"/>
+        <Label Content="Antal försök" HorizontalAlignment="Left" Margin="206,217,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="antalTxt" HorizontalAlignment="Left" Margin="206,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Button x:Name="startaBtn" Content="Starta" HorizontalAlignment="Left" Margin="331,237,0,0" VerticalAlignment="Top" Height="30" Width="49" Click="startaBtn_Click"/>
+        <Label Content="Utfall" HorizontalAlignment="Left" Margin="148,314,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Antal åt rätt håll" HorizontalAlignment="Left" Margin="148,345,0,0" VerticalAlignment="Top"/>
+        <Label Content="Antal åt fel håll" HorizontalAlignment="Left" Margin="148,376,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="rättLbl" Content="" HorizontalAlignment="Left" Margin="248,345,0,0" VerticalAlignment="Top" Width="61"/>
+        <Label x:Name="felLbl" Content="" HorizontalAlignment="Left" Margin="248,376,0,0" VerticalAlignment="Top" Width="61"/>
+        <Label x:Name="procentLbl1" Content="50 %" HorizontalAlignment="Left" Margin="550,110,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="procentLbl2" Content="50 %" HorizontalAlignment="Left" Margin="218,110,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
